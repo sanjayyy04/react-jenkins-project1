@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    flex-wrap: wrap;
+}
+
+.navbar .link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar .link:hover {
+    background-color: #575757;
+}
+
+.navbar .logo {
+    color: white;
+    text-decoration: none;
+}
+
+.contect-form {
+    max-width: 500px;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #cdcdcd;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.user {
+    width: fit-content;
+    /* text-align: left; */
+    font-weight: bold;
+    color: black;
+    background-color: red;
+    padding: 10px 10px;
+    display: box;
+    border-radius: 10px;
+    float: right;
+}
