@@ -15,7 +15,7 @@ pipeline{
                     docker rm react-jenkins-project1-container || true
                     docker rmi react-jenkins-project1-image || true
                     docker build -t react-jenkins-project1-image .
-                    docker run -d -p 8080:80 --name react-jenkins-project1-container react-jenkins-project1-image
+                    docker run -d -p 5173:80 --name react-jenkins-project1-container react-jenkins-project1-image
                 '''
             }
         }
