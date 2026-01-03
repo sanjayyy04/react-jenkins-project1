@@ -10,7 +10,16 @@ pipeline{
         stage('Docker Build and Push'){
             steps{
                 echo 'Building and Pushing Docker Image...'
-                sh 'docker-compose up'
+                sh '''
+                    docker stop react-jenkins-project1-container || true
+                    docker rm react-jenkins-project1-container || true
+                    docker rmi react-jenkins-project1-image || true
+
+                    docker build -t react-jenkins-project1-image .
+
+                    // running container
+                    docker run -d -p 8080:80 --name react-jenkins-project1-container react-jenkins-project1-image
+                '''
             }
         }
     }
