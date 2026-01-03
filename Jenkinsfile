@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Clonning repo'){
             steps{
-                echo 'Clonning repo.....'
+                echo 'Clonning repo....'
                git branch: 'main', url: 'https://github.com/sanjayyy04/react-jenkins-project1.git'
             }
         }
